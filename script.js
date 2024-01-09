@@ -30,6 +30,7 @@ function colision_handle(){
     let canvas_left = canvas.offsetLeft;
     if (canvas_left <= 0 || canvas_left + canvas_width >= width){
         inc_x = ~inc_x + 1;
+        console.log(inc_x);
         randomColor();
     }
     if (canvas_top <= 0 || canvas_top + canvas_height >= height){
